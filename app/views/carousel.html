@@ -1,0 +1,14 @@
+<carousel interval="a">
+  <slide ng-repeat="slide in slides track by $index">
+    <img ng-src="{{slide.img}}">
+    <div class="carousel-caption">
+      <h1>{{slide.title}}</h1>
+    </div>
+  </slide>
+</carousel>
+<gui slides="slides" interval="a">
+<!-- todo":
+  1. A way to set default settings in the gui, and when default value, also hide from url and use default!
+  2. A way to make sliders/numbers/etc (interval-slider?)
+  3. Bug: When adding and removing gui in the url there is an exception from data.GUi.js
+-->
